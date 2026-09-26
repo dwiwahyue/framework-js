@@ -79,7 +79,7 @@ const Header = () => {
         className="flex justify-center items-center bg-emerald-50 w-10 h-10 text-2xl text-black rounded-full hover:cursor-pointer"
         onClick={() => navigate("/home/user")}
       >
-        {user.name[0] || "U"}
+        {user.name[0].toUpperCase() || "U"}
       </div>
     </header>
   );

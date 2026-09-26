@@ -14,7 +14,7 @@ const User = () => {
       <header className="flex flex-row items-center justify-around bg-linear-to-r from-black to-cyan-400 h-45 ">
         <div className="flex items-center flex-row">
           <div className="flex justify-center items-center bg-emerald-50 w-30 h-30 text-4xl text-black rounded-full">
-            {user.name[0] || "U"}
+            {user.name[0].toUpperCase() || "U"}
           </div>
           <div className="flex flex-col justify-center items-start ml-4">
             <h1 className="text-white text-2xl">{user.name}</h1>
